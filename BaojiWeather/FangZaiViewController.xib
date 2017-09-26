@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FangZaiViewController">
+            <connections>
+                <outlet property="ScanView" destination="Xv1-89-DZC" id="WHH-V7-8c8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+        <view contentMode="scaleToFill" id="Xv1-89-DZC">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="559"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSk-PP-zQw">
+                    <rect key="frame" x="8" y="8" width="33" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="33" id="Zev-8o-nOg"/>
+                        <constraint firstAttribute="height" constant="34" id="jTD-2v-0A8"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="close_btn"/>
+                    <connections>
+                        <action selector="closeView:" destination="-1" eventType="touchUpInside" id="QYO-53-tF9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="DSk-PP-zQw" firstAttribute="top" secondItem="Xv1-89-DZC" secondAttribute="top" constant="8" id="4fu-kc-gYH"/>
+                <constraint firstItem="DSk-PP-zQw" firstAttribute="leading" secondItem="Xv1-89-DZC" secondAttribute="leading" constant="8" id="Oxl-7T-foP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="747" y="13.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close_btn" width="26" height="26"/>
+    </resources>
+</document>

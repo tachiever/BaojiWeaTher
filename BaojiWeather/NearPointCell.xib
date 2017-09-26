@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="NearPointCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="辛集川水库" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4R-Z4-p0D">
+                        <rect key="frame" x="30" y="8" width="83" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="83" id="Iyz-oi-wDj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300.33千米(陈仓区)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qz-MH-Kwm">
+                        <rect key="frame" x="117" y="11" width="195" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p7b-l9-3pf">
+                        <rect key="frame" x="0.0" y="-2" width="5" height="54"/>
+                        <color key="backgroundColor" red="0.22740659120000001" green="0.65795099739999996" blue="0.93132138249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="IuF-Bn-3cy"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="city_itom_location" translatesAutoresizingMaskIntoConstraints="NO" id="yhP-Jd-dnT">
+                        <rect key="frame" x="8" y="13" width="20" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="9jX-Mg-ePx"/>
+                            <constraint firstAttribute="width" constant="20" id="TgL-ry-eTx"/>
+                            <constraint firstAttribute="width" constant="20" id="f0K-wC-4PN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="TgL-ry-eTx"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="p7b-l9-3pf" secondAttribute="bottom" constant="-10" id="8pc-47-NpE"/>
+                    <constraint firstItem="p7b-l9-3pf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-10" id="BF2-Uo-gqV"/>
+                    <constraint firstItem="x4R-Z4-p0D" firstAttribute="leading" secondItem="yhP-Jd-dnT" secondAttribute="trailing" constant="2" id="BWi-yT-SJk"/>
+                    <constraint firstItem="x4R-Z4-p0D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="EI8-tg-0kg"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="yhP-Jd-dnT" secondAttribute="bottom" constant="5" id="H1f-LB-Jb3"/>
+                    <constraint firstItem="yhP-Jd-dnT" firstAttribute="leading" secondItem="p7b-l9-3pf" secondAttribute="trailing" constant="3" id="JuB-gN-xtq"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="3qz-MH-Kwm" secondAttribute="bottom" constant="3" id="LHg-Ke-p6v"/>
+                    <constraint firstItem="3qz-MH-Kwm" firstAttribute="leading" secondItem="x4R-Z4-p0D" secondAttribute="trailing" constant="4" id="M00-6j-0IW"/>
+                    <constraint firstItem="x4R-Z4-p0D" firstAttribute="leading" secondItem="yhP-Jd-dnT" secondAttribute="trailing" constant="2" id="Qcy-0S-f52"/>
+                    <constraint firstItem="yhP-Jd-dnT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="VIy-Y3-eFn"/>
+                    <constraint firstItem="yhP-Jd-dnT" firstAttribute="leading" secondItem="p7b-l9-3pf" secondAttribute="trailing" constant="3" id="YvU-ud-rDK"/>
+                    <constraint firstItem="3qz-MH-Kwm" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="emG-Dm-PuQ"/>
+                    <constraint firstItem="3qz-MH-Kwm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="iR9-yd-Zvo"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="x4R-Z4-p0D" secondAttribute="bottom" id="l2v-st-foC"/>
+                    <constraint firstItem="p7b-l9-3pf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="nCd-9d-llU"/>
+                    <constraint firstItem="yhP-Jd-dnT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uXM-vO-KhS"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="H1f-LB-Jb3"/>
+                        <exclude reference="VIy-Y3-eFn"/>
+                        <exclude reference="YvU-ud-rDK"/>
+                        <exclude reference="Qcy-0S-f52"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dixtenceLab" destination="3qz-MH-Kwm" id="wAR-er-ojh"/>
+                <outlet property="nameLab" destination="x4R-Z4-p0D" id="601-MX-deg"/>
+            </connections>
+            <point key="canvasLocation" x="340" y="324.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="city_itom_location" width="16" height="20"/>
+    </resources>
+</document>
